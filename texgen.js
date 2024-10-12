@@ -46,6 +46,22 @@ function create_border_texture(w,h){
 	return data;
 }
 
+function tex_custom_rgb(w, h, color) {
+    // color - это объект с одним цветом, например: {r: 91, g: 122, b: 32, a: 255}
+    var data = new Uint8Array(w * h * 4);
+
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            // Устанавливаем значение пикселя на основе переданного цвета
+            data[(y * w + x) * 4] = color.r;   // Red
+            data[(y * w + x) * 4 + 1] = color.g; // Green
+            data[(y * w + x) * 4 + 2] = color.b; // Blue
+            data[(y * w + x) * 4 + 3] = color.a; // Alpha (A)
+        }
+    }
+    return data;
+}
+
 function tex_grass(w,h){
 	var heights = [3,2,7,4,8,12,7,11,13,8,10,7,5,8,1,3];
 	var data = new Uint8Array(w*h*4);
