@@ -18,7 +18,7 @@ function draw_progress(progress_message){
 	ctx2d.fillText(progress_message, canvas2d.width/2,canvas2d.height/2 + 10);
 	ctx2d.fillStyle = 'rgb(50,100,50)';
 	ctx2d.font = 'bold 16px Calibri';
-	ctx2d.fillText("created by MihailRis", canvas2d.width/2,canvas2d.height/2 - 10);
+	ctx2d.fillText("Modified by DomaJa", canvas2d.width/2,canvas2d.height/2 - 10);
 	ctx2d.textAlign = "left"
 }
 
