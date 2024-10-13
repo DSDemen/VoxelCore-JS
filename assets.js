@@ -65,7 +65,7 @@ function initialize_assets() {
 	var res = 16;
 	atlas = new Atlas(res, [
 		tex_noise_rgb(res,res, 0.05, 0.2), 
-		tex_custom_rgb(res, res, color), 
+		tex_noise_rgb(res,res, 0.5, 0.5), 
 		create_test_texture(res,res), 
 		create_test_texture(res,res), 
 		tex_grass(res,res),
